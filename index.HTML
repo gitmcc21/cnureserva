@@ -1,0 +1,711 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.26095" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/paypal.js?v=3.3.26095" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.setConditions([{"action":[{"field":"11","visibility":"Show"}],"link":"Any","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"},{"action":[{"field":"12","visibility":"Show"}],"link":"Any","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"},{"action":[{"field":"10","visibility":"Show"}],"link":"Any","terms":[{"field":"15","operator":"equals","value":"Yes"}],"type":"field"}]);
+	JotForm.init(function(){
+      productID = {"0":"input_7_1001","1":"input_7_1006","2":"input_7_1005","3":"input_7_1004"};
+      paymentType = "product";
+      JotForm.setCurrencyFormat('EUR',true, 'point');
+      JotForm.totalCounter({"input_7_1001":{"price":"30","quantityField":"input_7_quantity_1001_0"},"input_7_1006":{"price":"165","quantityField":"input_7_quantity_1006_0"},"input_7_1005":{"price":"121","quantityField":"input_7_quantity_1005_0"},"input_7_1004":{"price":"84","quantityField":"input_7_quantity_1004_0"}});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
+      $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
+      JotForm.handleProductLightbox();
+if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
+      JotForm.setCustomHint( 'input_14', 'escriba aqu\u00ed ...' );
+	JotForm.newDefaultTheme = false;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+      JotForm.alterTexts(undefined, true);
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"formularioDe1","qid":"1","text":"formulario de inscripcion","type":"control_head"},{"name":"nombreCompleto","qid":"2","text":"Nombre Completo","type":"control_fullname"},{"name":"email3","qid":"3","subLabel":"","text":"E-mail","type":"control_email"},{"name":"direccion","qid":"4","text":"Direccion","type":"control_address"},null,{"name":"pageBreak","qid":"6","text":"Page Break","type":"control_pagebreak"},{"name":"reservas","qid":"7","text":"RESERVAS","type":"control_paypal"},null,null,null,null,null,{"name":"enviarreserva","qid":"13","text":"ENVIAR RESERVA","type":"control_button"},{"name":"informacionAdicional","qid":"14","text":"informacion adicional ","type":"control_textarea"},null,null,{"description":"","name":"numeroDe","qid":"17","text":"Numero de telefono","type":"control_phone"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"formularioDe1","qid":"1","text":"formulario de inscripcion","type":"control_head"},{"name":"nombreCompleto","qid":"2","text":"Nombre Completo","type":"control_fullname"},{"name":"email3","qid":"3","subLabel":"","text":"E-mail","type":"control_email"},{"name":"direccion","qid":"4","text":"Direccion","type":"control_address"},null,{"name":"pageBreak","qid":"6","text":"Page Break","type":"control_pagebreak"},{"name":"reservas","qid":"7","text":"RESERVAS","type":"control_paypal"},null,null,null,null,null,{"name":"enviarreserva","qid":"13","text":"ENVIAR RESERVA","type":"control_button"},{"name":"informacionAdicional","qid":"14","text":"informacion adicional ","type":"control_textarea"},null,null,{"description":"","name":"numeroDe","qid":"17","text":"Numero de telefono","type":"control_phone"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.26095" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.26095" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.26095" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5f6c4c83346ec05354558fe8"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.26095" />
+<style type="text/css">
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    .form-all{
+        width:690px;
+        color:#3E4E1A !important;
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size:14px;
+    }
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-header-group {
+      font-family: Lucida Grande, sans-serif;
+    }
+    .form-label {
+      font-family: Lucida Grande, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      max-width: 690px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 150px;
+    }
+  
+    .form-all {
+      font-size: 14px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 14px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 14px
+    }
+  
+    .supernova {
+      background-color: #8FBDFD;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #F9F2E7;
+    }
+  
+    .form-all {
+      color: #3E4E1A;
+    }
+    .form-header-group .form-header {
+      color: #3E4E1A;
+    }
+    .form-header-group .form-subHeader {
+      color: #3E4E1A;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #3E4E1A;
+    }
+    .form-sub-label {
+      color: #586834;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .form-line-error {
+      overflow: hidden;
+      transition: none;
+      background-color: #FFF4F4;
+    }
+
+    .form-line-error .form-error-message {
+      background-color: #FF3200;
+      clear: both;
+      float: none;
+    }
+
+    .form-line-error .form-error-arrow {
+      border-bottom-color: #FF3200;
+    }
+
+    .form-line-error input:not(#coupon-input),
+    .form-line-error textarea,
+    .form-line-error .form-validation-error {
+      border: 1px solid #FF3200;
+      .box-shadow(0 0 3px #FF3200);
+    }
+   
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    }
+  
+    .form-all {
+      background-image: none;
+    }
+  
+    .form-all {
+      position: relative;
+    }
+    .form-all:before {
+      content: "";
+      background-image: url("https://www.jotform.com/uploads/manuelclemente233/form_files/CNU.60d8148d5511b0.78422249.jpg");
+      display: inline-block;
+      height: 140px;
+      position: absolute;
+      background-size: 139px 140px;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+    .form-all {
+      margin-top: 150px !important;
+    }
+    .form-all:before {
+      top: -150px;
+      left: 0;
+      background-position: top left;
+    }
+           
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*//*---ROUNDED INPUTS---*/
+.form-all input,select {height: 22px;
+font-family: Verdana, Arial, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #555;
+padding: 0px 3px 0px 3px;
+background: #fefefe;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+}
+.form-textarea {
+background: #f7f7f7;
+padding: 0px 3px 0px 3px;
+height: 55px;
+font-family: Verdana, Arial, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #333;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+}
+.form-header-group {
+text-align: center;
+background: none !important;
+border-bottom: none !important;
+}
+/*----Form Label Left-----*/
+.form-label-top {
+background: #efefef;
+border: 1px solid #ccc;
+padding: 4px 0px 3px 8px;
+font-family: Verdana, Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #555;
+text-decoration: none;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+width: 654px !important;
+}
+#input_14.form-textarea {
+background: #f7f7f7;
+padding: 0px 3px 0px 3px;
+height: 107px;
+width: 656px;
+font-family: Verdana, Arial, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #333;
+border: 1px solid #ccc;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-o-border-radius: 4px;
+-ms-border-radius: 4px;
+-khtml-border-radius: 4px;
+}
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
+    /* Injected CSS Code */
+</style>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-light_rounded.css?3.3.26095"/>
+<form class="jotform-form" action="https://submit.jotformeu.com/submit/211770640245349/" method="post" name="form_211770640245349" id="211770640245349" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="211770640245349" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              formulario de inscripción
+            </h1>
+            <div id="subHeader_1" class="form-subHeader">
+              HAGA SU RESERVA Y LE CONTACTAREMOS PARA FORMALIZAR SU AFILIACIÓN
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_2">
+        <label class="form-label form-label-top" id="label_2" for="first_2"> Nombre Completo </label>
+        <div id="cid_2" class="form-input-wide">
+          <div data-wrapper-react="true" class="extended">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_2" name="q2_nombreCompleto[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_2 sublabel_2_first" />
+              <label class="form-sub-label" for="first_2" id="sublabel_2_first" style="min-height:13px" aria-hidden="false"> Nombre </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="middle">
+              <input type="text" id="middle_2" name="q2_nombreCompleto[middle]" class="form-textbox" size="10" value="" data-component="middle" aria-labelledby="label_2 sublabel_2_middle" />
+              <label class="form-sub-label" for="middle_2" id="sublabel_2_middle" style="min-height:13px" aria-hidden="false"> apellido 1 </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_2" name="q2_nombreCompleto[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_2 sublabel_2_last" />
+              <label class="form-sub-label" for="last_2" id="sublabel_2_last" style="min-height:13px" aria-hidden="false"> apellido 2 </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_3">
+        <label class="form-label form-label-top" id="label_3" for="input_3"> E-mail </label>
+        <div id="cid_3" class="form-input-wide">
+          <input type="email" id="input_3" name="q3_email3" class="form-textbox validate[Email]" size="30" value="" data-component="email" aria-labelledby="label_3" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_17" data-compound-hint=",">
+        <label class="form-label form-label-top form-label-auto" id="label_17" for="input_17_area"> Número de teléfono </label>
+        <div id="cid_17" class="form-input-wide">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
+              <input type="tel" id="input_17_area" name="q17_numeroDe[area]" class="form-textbox" value="" data-component="areaCode" aria-labelledby="label_17 sublabel_17_area" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_17_area" id="sublabel_17_area" style="min-height:13px" aria-hidden="false"> de área </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
+              <input type="tel" id="input_17_phone" name="q17_numeroDe[phone]" class="form-textbox" value="" data-component="phone" aria-labelledby="label_17 sublabel_17_phone" />
+              <label class="form-sub-label" for="input_17_phone" id="sublabel_17_phone" style="min-height:13px" aria-hidden="false"> Número de teléfono </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_4">
+        <label class="form-label form-label-top" id="label_4" for="input_4_addr_line1"> Dirección </label>
+        <div id="cid_4" class="form-input-wide">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line1" name="q4_direccion[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" aria-labelledby="label_4 sublabel_4_addr_line1" required="" />
+                  <label class="form-sub-label" for="input_4_addr_line1" id="sublabel_4_addr_line1" style="min-height:13px" aria-hidden="false"> Calle, plaza etc.. </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line2" name="q4_direccion[addr_line2]" class="form-textbox form-address-line" value="" data-component="address_line_2" aria-labelledby="label_4 sublabel_4_addr_line2" />
+                  <label class="form-sub-label" for="input_4_addr_line2" id="sublabel_4_addr_line2" style="min-height:13px" aria-hidden="false"> información adicional </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_city" name="q4_direccion[city]" class="form-textbox form-address-city" value="" data-component="city" aria-labelledby="label_4 sublabel_4_city" required="" />
+                  <label class="form-sub-label" for="input_4_city" id="sublabel_4_city" style="min-height:13px" aria-hidden="false"> población </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_state" name="q4_direccion[state]" class="form-textbox form-address-state" value="" data-component="state" aria-labelledby="label_4 sublabel_4_state" required="" />
+                  <label class="form-sub-label" for="input_4_state" id="sublabel_4_state" style="min-height:13px" aria-hidden="false"> provincia </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_postal" name="q4_direccion[postal]" class="form-textbox form-address-postal" value="" data-component="zip" aria-labelledby="label_4 sublabel_4_postal" required="" />
+                  <label class="form-sub-label" for="input_4_postal" id="sublabel_4_postal" style="min-height:13px" aria-hidden="false"> código postal </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="cid_6" class="form-input-wide" data-type="control_pagebreak">
+        <div class="form-pagebreak" data-component="pagebreak">
+          <div class="form-pagebreak-back-container">
+            <button id="form-pagebreak-back_6" type="button" class="form-pagebreak-back  jf-form-buttons" data-component="pagebreak-back">
+              ATRÁS 
+            </button>
+          </div>
+          <div class="form-pagebreak-next-container">
+            <button id="form-pagebreak-next_6" type="button" class="form-pagebreak-next  jf-form-buttons" data-component="pagebreak-next">
+              SIGUIENTE
+            </button>
+          </div>
+          <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_6">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="form-section page-section" style="display:none;">
+      <li class="form-line" data-type="control_paypal" id="id_7" data-payment="true">
+        <label class="form-label form-label-top" id="label_7" for="input_7"> RESERVAS </label>
+        <div id="cid_7" class="form-input-wide">
+          <div data-wrapper-react="true" class="product-container-wrapper">
+            <div class="filter-container">
+            </div>
+            <input type="hidden" name="simple_fpc" data-payment_type="paypal" data-component="payment1" value="7" />
+            <input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" />
+            <div id="image-overlay" class="overlay-content" style="display:none">
+              <img id="current-image" />
+              <span class="lb-prev-button">
+                prev
+              </span>
+              <span class="lb-next-button">
+                next
+              </span>
+              <span class="lb-close-button">
+                ( X )
+              </span>
+              <span class="image-overlay-product-container">
+                <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                </ul>
+                <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                </ul>
+                <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                </ul>
+                <ul class="form-overlay-item" hasicon="false" hasimages="false" iconvalue="">
+                </ul>
+              </span>
+            </div>
+            <div data-wrapper-react="true">
+              <span class="form-product-item hover-product-item " categories="non-categorized" pid="1001">
+                <div data-wrapper-react="true" class="form-product-item-detail">
+                  <input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1001" name="q7_reservas[][id]" value="1001" />
+                  <label for="input_7_1001" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <span class="form-product-name" id="product-name-input_7_1001">
+                        RESERVA DE ACCIÓN
+                      </span>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            €
+                            <span id="input_7_1001_price">
+                              30.00
+                            </span>
+                            <span class="currency_abr">
+                              EUR
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <div class="form-product-description" id="product-name-description-input_7_1001">
+                    </div>
+                  </label>
+                  <br/>
+                  <br/>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <label class="form-sub-label" for="input_7_quantity_1001_0" style="min-height:13px" aria-hidden="false"> RESERVA </label>
+                    <select class="form-dropdown" name="q7_reservas[special_1001][item_0]" id="input_7_quantity_1001_0">
+                      <option value="1"> 1 </option>
+                      <option value="2"> 2 </option>
+                      <option value="3"> 3 </option>
+                      <option value="">  </option>
+                      <option value="5"> 5 </option>
+                      <option value="6"> 6 </option>
+                      <option value="7"> 7 </option>
+                      <option value="8"> 8 </option>
+                      <option value="9"> 9 </option>
+                      <option value="10"> 10 </option>
+                    </select>
+                  </span>
+                </div>
+              </span>
+              <br/>
+              <span class="form-product-item hover-product-item " categories="non-categorized" pid="1006">
+                <div data-wrapper-react="true" class="form-product-item-detail">
+                  <input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1006" name="q7_reservas[][id]" value="1006" />
+                  <label for="input_7_1006" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <span class="form-product-name" id="product-name-input_7_1006">
+                        RESERVA DE SOCIO NUMERARIO
+                      </span>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            €
+                            <span id="input_7_1006_price">
+                              165.00
+                            </span>
+                            <span class="currency_abr">
+                              EUR
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <div class="form-product-description" id="product-name-description-input_7_1006">
+                    </div>
+                  </label>
+                  <br/>
+                  <br/>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <label class="form-sub-label" for="input_7_quantity_1006_0" style="min-height:13px" aria-hidden="false"> NÚMERO DE ACCIONES </label>
+                    <select class="form-dropdown" name="q7_reservas[special_1006][item_0]" id="input_7_quantity_1006_0">
+                      <option value="1"> 1 </option>
+                      <option value="2"> 2 </option>
+                      <option value="3"> 3 </option>
+                      <option value="">  </option>
+                      <option value="5"> 5 </option>
+                      <option value="6"> 6 </option>
+                      <option value="7"> 7 </option>
+                      <option value="8"> 8 </option>
+                      <option value="9"> 9 </option>
+                      <option value="10"> 10 </option>
+                    </select>
+                  </span>
+                </div>
+              </span>
+              <br/>
+              <span class="form-product-item hover-product-item " categories="non-categorized" pid="1005">
+                <div data-wrapper-react="true" class="form-product-item-detail">
+                  <input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1005" name="q7_reservas[][id]" value="1005" />
+                  <label for="input_7_1005" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <span class="form-product-name" id="product-name-input_7_1005">
+                        RESERVA DE SOCIO NUMERARIO A PARTIR DE 65 AÑOS
+                      </span>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            €
+                            <span id="input_7_1005_price">
+                              121.00
+                            </span>
+                            <span class="currency_abr">
+                              EUR
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <div class="form-product-description" id="product-name-description-input_7_1005">
+                    </div>
+                  </label>
+                  <br/>
+                  <br/>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <label class="form-sub-label" for="input_7_quantity_1005_0" style="min-height:13px" aria-hidden="false"> NÚMERO DE ACCIONES </label>
+                    <select class="form-dropdown" name="q7_reservas[special_1005][item_0]" id="input_7_quantity_1005_0">
+                      <option value="1"> 1 </option>
+                      <option value="2"> 2 </option>
+                      <option value="3"> 3 </option>
+                      <option value="">  </option>
+                      <option value="5"> 5 </option>
+                      <option value="6"> 6 </option>
+                      <option value="7"> 7 </option>
+                      <option value="8"> 8 </option>
+                      <option value="9"> 9 </option>
+                      <option value="10"> 10 </option>
+                    </select>
+                  </span>
+                </div>
+              </span>
+              <br/>
+              <span class="form-product-item hover-product-item " categories="non-categorized" pid="1004">
+                <div data-wrapper-react="true" class="form-product-item-detail">
+                  <input type="checkbox" class="form-checkbox  form-product-input" id="input_7_1004" name="q7_reservas[][id]" value="1004" />
+                  <label for="input_7_1004" class="form-product-container">
+                    <span data-wrapper-react="true">
+                      <span class="form-product-name" id="product-name-input_7_1004">
+                        RESERVA BENEFICIARIO
+                      </span>
+                      <span class="form-product-details">
+                        <b>
+                          <span data-wrapper-react="true">
+                            €
+                            <span id="input_7_1004_price">
+                              84.00
+                            </span>
+                            <span class="currency_abr">
+                              EUR
+                            </span>
+                          </span>
+                        </b>
+                      </span>
+                    </span>
+                    <div class="form-product-description" id="product-name-description-input_7_1004">
+                    </div>
+                  </label>
+                  <br/>
+                  <br/>
+                  <span class="form-sub-label-container" style="vertical-align:top">
+                    <label class="form-sub-label" for="input_7_quantity_1004_0" style="min-height:13px" aria-hidden="false"> NÚMERO DE ACCIONES </label>
+                    <select class="form-dropdown" name="q7_reservas[special_1004][item_0]" id="input_7_quantity_1004_0">
+                      <option value="1"> 1 </option>
+                      <option value="2"> 2 </option>
+                      <option value="3"> 3 </option>
+                      <option value="">  </option>
+                      <option value="5"> 5 </option>
+                      <option value="6"> 6 </option>
+                      <option value="7"> 7 </option>
+                      <option value="8"> 8 </option>
+                      <option value="9"> 9 </option>
+                      <option value="10"> 10 </option>
+                    </select>
+                  </span>
+                </div>
+              </span>
+              <br/>
+              <span class="form-payment-total">
+                <b>
+                  <span id="total-text">
+                    Total
+                  </span>
+                   
+                  <span class="form-payment-price">
+                    <span data-wrapper-react="true">
+                      €
+                      <span id="payment_total">
+                        0.00
+                      </span>
+                      <span class="currency_abr">
+                        EUR
+                      </span>
+                    </span>
+                  </span>
+                </b>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_14">
+        <label class="form-label form-label-top" id="label_14" for="input_14"> información adicional </label>
+        <div id="cid_14" class="form-input-wide">
+          <textarea id="input_14" class="form-textarea" name="q14_informacionAdicional" cols="50" rows="10" data-component="textarea" aria-labelledby="label_14"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_13">
+        <div id="cid_13" class="form-input-wide">
+          <div style="text-align:left" data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+            <button id="input_13" type="submit" class="form-submit-button form-submit-button-light_rounded submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              ENVÍAR RESERVA
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+  JotForm.poweredByText = "Powered by JotForm";
+  </script>
+  <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="211770640245349" />
+  <script type="text/javascript">
+  var all_spc = document.querySelectorAll("form[id='211770640245349'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+  all_spc[i].value = "211770640245349-211770640245349";
+}
+  </script>
+  <div class="formFooter-heightMask">
+  </div>
+  <div class="formFooter f6">
+    <div class="formFooter-wrapper formFooter-leftSide">
+      <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=211770640245349&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png" alt="Jotform Logo"></a>
+    </div>
+    <div class="formFooter-wrapper formFooter-rightSide">
+      <span class="formFooter-text">
+        Now create your own JotForm - It's free!
+      </span>
+      <a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=211770640245349&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own JotForm</a>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">JotForm.forwardToEu=true;</script>
